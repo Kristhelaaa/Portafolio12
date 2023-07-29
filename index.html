@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@400;500&family=Playfair:wght@500&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">11vo BACO</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="hero.jpg" alt="">
+            </div>
+            <h1>Krysthel Garcia</h1>
+            <h2>Programadora junior</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/krysthel.garciasolis/?locale=es_LA"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/kristhellch.j/"> <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.canva.com/design/DAFp-U7Nzb8/1FNYgdWa3zV6jStAdqv5yA/view?utm_content=DAFp-U7Nzb8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"><i class="fa-solid fa-paperclip"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Krysthel Garcia.</span> Soy una estudiante de 17 años que cursa el bachillerato de computación en el Colegio Roca de Ayuda. Mi fe está firmemente arraigada en Dios, y considero que Él es la prioridad en mi vida sobre todas las cosas. Aparte de mi devoción, tengo varios intereses y pasiones. Uno de ellos son los videojuegos, los cuales disfruto mucho. También me encanta cocinar y cantar. La creatividad es una característica importante en mí, ya que me gusta decorar y prestar atención a los detalles en todo lo que hago.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            21-06-2006
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +502 50133053
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            garciakhrystel@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            123 Ciudad, Guatemala
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-cross" style="color: #fafcff;"></i>
+                            <span>DIOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-palette" style="color: #ffffff;"></i>
+                            <span>ARTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-solid fa-cart-shopping"></i>
+                            <span>SHOPPING</span>
+                        </div>
+                             
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Figma</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power Point</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Primaria</h4>
+                        <span class="casa">Colegio Elim Norte</span>
+                        <span class="fecha">2016 - 2018</span>
+                        <p>Desde el año 2016 hasta el año 2018, asistí a mi educación primaria en el Colegio Cristiano Elim Norte. En dicho colegio, tuve la oportunidad de participar en la ceremonia de graduación para mi último año de primaria.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Secundaria</h4>
+                        <span class="casa">Colegio Elim Norte y Liceo Roca de Ayuda</span>
+                        <span class="fecha">2019 - 2021</span>
+                        <p>
+                            Después de completar séptimo y octavo en el Colegio Elim Norte, continué mi educación en el mismo colegio. Sin embargo, en noveno grado, decidí cambiar de escuela y me trasladé al Liceo Roca de Ayuda. Fue en este colegio donde finalicé mi secundaria.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Preparatoria</h4>
+                        <span class="casa">Liceo Roca de Ayuda</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>En el Liceo Roca de Ayuda, culminé mi preparatoria, obteniendo mi título de Bachiller en Computación con especialización en ciencias.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Hobbies</h3>
+                    <div class="item der">
+                        <span class="casa">Cine y Series</span>
+                        <p>Disfrutar de películas y series en el tiempo libre.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="casa">Manualidades</span>
+                        <p>Crear objetos decorativos o funcionales con materiales diversos.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="casa">Cocinar</span>
+                        <p>Experimentar en la cocina y preparar deliciosos platos.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="casa">Practicar deporte</span>
+                        <p>Me encanta practicar el deporte de baloncesto.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="casa">Pintar o dibujar</span>
+                        <p>Expresar la creatividad a través del arte visual.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <span class="casa">Danza</span>
+                        <p>Por medio de este hobbie, practico danza de parte de la iglesia.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://kristhelaaa.github.io/Editor-de-codigo/">
+                    <img src="p1.png" alt="">
+                    <div class="overlay">
+                        <h3>1.</h3>
+                        <p>Editor de código</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://kristhelaaa.github.io/Paleta-de-colores/">
+                    <img src="p2.png" alt="">
+                    <div class="overlay">
+                        <h3>2.</h3>
+                        <p>Paleta de colores</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://kristhelaaa.github.io/Presupuesto/">
+                    <img src="p3.png" alt="">
+                    <div class="overlay">
+                        <h3>D3.</h3>
+                        <p>Presupuesto</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://kristhelaaa.github.io/Reloj-digital/">
+                    <img src="p4.png" alt="">
+                    <div class="overlay">
+                        <h3>4.</h3>
+                        <p>Reloj digital</p>
+                    </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://kristhelaaa.github.io/To-Do-list/">
+                    <img src="p5.png" alt="" >
+                    <div class="overlay">
+                        <h3>5.</h3>
+                        <p>To Do list</p>
+                    </div>
+                    </a>
+                </div>
+                <!-- <div class="proyecto">
+                    <img src="p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>6.</h3>
+                        <p>Programación</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Ciudad de Guatemala, Guatemala
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 5013-3053
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: krysthel.garcia@licra.edu.gt
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
